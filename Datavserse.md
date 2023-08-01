@@ -8,33 +8,33 @@ a cloud data platform for MS Power Platform. It can be used for creating Power A
 - Create and edit tables using Power Apps maker portal
 - Properties
   - Name/Row/Columns/Relationships/Alternate keys/Forms/Views(define the rows and columns)/Charts/Business rules/Metadata
-    - Row keys: primary key is uniquely identifies a single row in the table. it is a GUID, a 32 character string, generated automatically when a row is created.
-    - primary column: text string used to represent the row in apps and flows
+    - Row keys = Primary key = a GUID, a 32-character string, generated automatically when a row is created.
+    - Primary column: text string used to represent the row in apps and flows, default to *Name*
 - How to create
   - In the portal, Tables > +New table >   
 
 - Types
-  1. Standard: 
+  1. Standard: can store data and add to the navigation in model-driven apps.
   2. Activity: store interactions, primary column are fixed and can't be changed. EX) phone calls, tasks, and appointments
   3. Virtual: from external source; Azure SQL DB or Sharepointlist  
 
 ### Create a custom table
 - Power Apps maker portal > Tables > + New Table > Enter properties
+- Advanced options: schema name unless automatically assigned and table ownership (user or team/organization)
 ### Add a custom column
-- + button > enter New column pane > Create the choice values > drop-down list under Sync this choice with > select Prospect Stage 
+- + button > enter New column pane > Create the choice values(+New choice) > drop-down list under Sync this choice with > select Prospect Stage 
 ### Customize a view
 - Data experiences > Views > select Active Pets > + View Column
-- Created On > Remove
 - To arrange the columns, drag and select Move Left /Move Right > Save > Publish
 ### Customize a form
-- Tables > Pet > Forms > Information > select Table columns > drag Species,Breed, and Appointment date column > Save and publish
+- Tables > Pet > Views > Forms > Information > select Table columns > drag columns > Save and publish
 
 ### Import data into Dataverse database
 Import from Excel,Access,Sharepoint, SQL and others
 1. Create sample import data
-   - app launcher > All apps > Sharepoint > New > List > Blank list > write name and Create > Add column 
+   - office.com > app launcher > All apps > Sharepoint > New > List > Blank list > write name and Create > Add column 
 3. Import data into your dataverse table
-   - Power Apps maker portal > select Tables > select Pet table > select import > select Import data
+   - separate page, Power Apps maker portal > select Tables > select Pet table > select import > select Import data
    - Choose data source > query edit window > Map tables
   
 ### Table Relationships
