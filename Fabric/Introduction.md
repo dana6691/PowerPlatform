@@ -31,5 +31,20 @@
   - Dataflows(Gen2):  you can create a dataflow to perform subsequent transformations through Power Query, and optionally land transformed data back to the Lakehouse.
   - Data Pipelines: Orchestrate complex data transformation logic that operates on data in the lakehouse through a sequence of activities
  
-  - ## Apache Spark
-  - 
+## Apache Spark
+  - open source parallel processing framework for large-scale data processing and analytics. large volumes of data quickly by distributing the work across multiple computers. RUn code Java/Scala/Spark R/Spark SQL/PySpark. each workspace in MS Fabric is assigned a Spark cluster
+  - Configuration Settings
+    - Node Family: type of virtual machines used for the Spark cluster nodes. (memory optimized)
+    - Runtime version
+    - Spark Properties
+- Run Spark Code
+  - Notebooks: enable you to combine text, images, and code written in multiple languages and collaborate. consist of one or more cells, each of which can contain markdown-formatted content or executable code
+  - Spark Job Definition: use Spark to ingest and transform data as part of an automated process(script on demand/based on a schedule)
+  - Work with data in Spark Dataframe: (RDD)resilient distributed dataset, common data structure = dataframe, which is provided as part of the Spark SQL library. Saves the dataFrame into a parquet file in the data lake
+  - Work with data using Spark SQL
+  - Visualize data in a Spark Notebook: using built-in notebook charts/using graphics packages in code
+
+## Delta Lake Tables
+  - Tables in lakehouse are based on the Delta Lake storage format, commonly used in Apache Spark. enables relational database capabilities for batch and streaming data. can implement a lakehouse architecture to support SQL-based data manipulation semantics
+  - Delta Lake
+    - an open-source storage layer that adds relational database semantics to Spark-based data lake processing.
