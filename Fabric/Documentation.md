@@ -48,3 +48,12 @@
   - Tables in lakehouse are based on the Delta Lake storage format, commonly used in Apache Spark. enables relational database capabilities for batch and streaming data. can implement a lakehouse architecture to support SQL-based data manipulation semantics
   - Delta Lake
     - an open-source storage layer that adds relational database semantics to Spark-based data lake processing.
+
+## Data Factory pipelines
+- a sequence of activities that orchestrate an overall process, usually by extracting data from one or more sources and loading it into a destination; often transforming. To automate extract, transform, and load (ETL) processes that ingest transactional data from operational data stores into an analytical data store,
+- Concepts
+  - Activities: executable tasks in a pipeline. 1) Data transformation 2) Control flow
+  - Parameters
+  - Pipeline Runs
+- Copy Data Activity: Ingest data from an external source into a lakehouse file or table.
+  - If you need to transform the data or use multiple sources, use Data Flow activity to run a dataflow (Gen2). use the Power Query user interface to define a dataflow (Gen2)  
