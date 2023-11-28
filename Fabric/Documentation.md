@@ -57,3 +57,9 @@
   - Pipeline Runs
 - Copy Data Activity: Ingest data from an external source into a lakehouse file or table.
   - If you need to transform the data or use multiple sources, use Data Flow activity to run a dataflow (Gen2). use the Power Query user interface to define a dataflow (Gen2)  
+
+## Ingest Data with Dataflows Gen2
+- Dataflows: a type of cloud-based ETL (Extract, Transform, Load) tool for building and executing scalable data transformation processes.
+- Dataflows (Gen2): used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. Using Power Query Online also allows for a visual interface 
+- Create Dataflow 1) Data Factory workload 2) Power BI workspace 3) directly in the lakehouse
+- 
