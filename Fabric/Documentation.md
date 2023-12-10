@@ -62,4 +62,16 @@
 - Dataflows: a type of cloud-based ETL (Extract, Transform, Load) tool for building and executing scalable data transformation processes.
 - Dataflows (Gen2): used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. Using Power Query Online also allows for a visual interface 
 - Create Dataflow 1) Data Factory workload 2) Power BI workspace 3) directly in the lakehouse
-- 
+  
+
+## Get started with data warehouses in Microsoft Fabric
+Microsoft Fabric enables data engineers and analysts to ingest, store, transform, and visualize data all in one tool with both a low-code and traditional experience.
+- Fabric's data warehouse
+  - a relational data warehouse that supports the full transactional T-SQL capabilities
+  - use Spark to process the data and create machine learning models.
+- Tables
+  - Fact tables: contain the numerical data that you want to analyze. Primary source
+  - Dimension tables: contain descriptive information about the data
+- Schema
+  - Star: a mature modeling approach widely adopted by relational data warehouses. a fact table is directly related to the dimension tables,
+  -  
