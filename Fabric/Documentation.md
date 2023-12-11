@@ -74,4 +74,48 @@ Microsoft Fabric enables data engineers and analysts to ingest, store, transform
   - Dimension tables: contain descriptive information about the data
 - Schema
   - Star: a mature modeling approach widely adopted by relational data warehouses. a fact table is directly related to the dimension tables,
-  -  
+  - Snowflake:
+1) Describe a data warehouse in Fabric
+  - create your data warehouse directly in Fabric from the create hub or within a workspace.
+  - Fabric's Lakehouse is a collection of files, folders, tables, and shortcuts that act like a database over a data lake.
+  - https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/3-understand-data-warehouse-fabric
+  - ?
+
+2) Ingest data into your data warehouse
+3) Query and Transform
+- Query
+  - using SQL query editor
+  - using the Visual query editor
+4) Prepare and visualize data
+  - Model view: Build relationships & Create measures using DAX & hide fields
+  - Understand the default dataset
+  - Visualize
+5) Secure and monitor your data warehouse
+  - Security
+    -   Role-based access control (RBAC)
+    -   SSL encryption to secure the communication between the warehouse and the client applications.
+    -   Azure Storage Service Encryption to protect the data in transit and at rest.
+    -   Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
+    -   Multifactor authentication (MFA) to add an extra layer of security to user accounts.
+    -   Azure Active Directory (Azure AD) integration to manage the user identities and access to the warehouse. 
+  - Monitor: *dynamic management views (DMVs)* to monitor connection, session, and request status to see live SQL query lifecycle
+  - Query monitoring
+## Data Science
+- Machine Learning
+  - Classification: predict a categorical value
+  - Clustering: group together with similar data points
+  - Regression: predict a numerical value
+  - Forecasting: predict future numerical value based on the time-series model
+-  Process  
+  - Define problem > get data > prepare data > train the model > generate insight
+1) Ingest and orchestrate data from multiple sources (local/cloud), can save data into MS Fabric *lakehouse*. Any structured, semi-structured, and unstructured files
+2) Transform data
+  - most familiar with writing and executing code in notebooks
+  - Prepare your data with the Data Wrangler
+3) Train and score models
+  - Start tracking metrics
+4) Review result
+  -  MLflow in a notebook to review tracked metrics
+  -  Microsoft Fabric's experiments offers a visual user interface to explore the metrics.
+
+
